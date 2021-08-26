@@ -19,8 +19,13 @@ Route::get('/', function () {
 
 //route admin
 Route::get('/index','Admin\AdminController@index')->name('index');
+
+//route Category
+Route::get('/CategoryForm','Admin\CategoryController@showcategory')->name('categoryfrom');
+Route::post('/Category/Create','Admin\CategoryController@create');
+
+//route Product
 Route::get('/ProductForm','Admin\AdminController@showproduct')->name('productfrom');
-Route::get('/CategoryForm','Admin\AdminController@showcategory')->name('categoryfrom');
 
 Auth::routes();
 

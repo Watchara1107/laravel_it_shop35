@@ -16,7 +16,4 @@ class AdminController extends Controller
 
     }
 
-    public function showcategory(){
-        return view('admin.category.categoryform');
-    }
 }
